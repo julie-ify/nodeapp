@@ -1,0 +1,9 @@
+--DROP DATABASE IF EXISTS perntodo;
+--CREATE DATABASE perntodo;
+
+DROP TABLE IF EXISTS todos CASCADE;
+
+CREATE TABLE todos (
+	todo_id SERIAL PRIMARY KEY NOT NULL,
+	description TEXT NOT NULL
+);
